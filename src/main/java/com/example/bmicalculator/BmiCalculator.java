@@ -1,11 +1,16 @@
 package com.example.bmicalculator;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class BmiCalculator {
     private static String calculateBmi(int height, double weight) {
         final double countBmi = (weight / Math.pow(height, 2)) * 10000;
-        String outputText = "\nYour BMI is: " + countBmi;
+        DecimalFormat df = new DecimalFormat();
+        df.setMaximumFractionDigits(1);
+        df.setMinimumFractionDigits(1);
+
+        String outputText = "\nYour BMI is: " + df.format(countBmi);
 
         if (countBmi < 18.5) {
             return "Underweight" + outputText;
