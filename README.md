@@ -1,9 +1,9 @@
-# Body mass index (BMI) calculator
+# Body Mass Index (BMI) calculator
 
 ## Parameters
 
-* height (meters)
-* weight (kilograms)
+* height (in meters)
+* weight (in kilograms)
 
 ## Outputs
 
